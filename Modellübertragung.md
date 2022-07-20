@@ -9,11 +9,11 @@ Die Modellübertragung ist an sich nicht direkt möglich, jedoch kann die GT als
 - Für die Daten-Übertragung wird **XML PAGE**-Format empfohlen
 - Zunächst Export aus Transkribus einrichten: Collection auswählen, im Reiter „HTR Model Data“ → Rechtsklick auf gewünschtes Set → Ziel-Collection auswählen → bestätigen
 
-
+<img width="294" alt="Transkribus1" src="https://user-images.githubusercontent.com/91966243/179986043-3caeea95-f4bd-41e7-b8da-d2a797389e06.png"><img width="296" alt="Transkribus2 (2)" src="https://user-images.githubusercontent.com/91966243/179987619-9b9fcc6d-77ac-42ea-af24-ec79209e1752.png">
 
 - Nun in Ziel-Collection wechseln: Dokument markieren → Exportieren → PAGE exportieren → IMAGE exportieren. Wichtig: Dateibenennungsmuster auf den Standardwert ("${Dateiname}") einstellen (einige Daten gehen verloren, da das ALTO XML Format nicht alle von Transkribus verwendeten Daten enthält)
 
-Bild
+<img width="400" alt="Transkribus3" src="https://user-images.githubusercontent.com/91966243/179986161-6cd6d087-04eb-4d64-a10f-8e35abc2479d.png"><img width="150" alt="Transkribus4" src="https://user-images.githubusercontent.com/91966243/179986173-f85b6eeb-de76-479f-bb0e-58b57ddc518b.png">
 
 **Hinweis:** wenn die Seitenbenennung in Transkribus nicht fortlaufend ist, dann „Filename pattern“ wählen: „docId+pageNr+pageID“ → Seiten werden dann in eScriptorium gleich nummeriert wie in Transkribus (funktioniert nicht, wenn man Einstellung pageNr.+filename auswählt, dann werden Seiten willkürlich geordnet)
 
@@ -29,10 +29,10 @@ Bild
 
 ### Neuberechnung der Linienmasken  
 - Bevor Modell trainiert werden kann, müssen mit Grundlinien verbundene Masken an Kraken angepasst werden
-- dafür im Reiter „Bilder“ einfach alle Bilder des Dokuments markieren ->  „Segmentieren“ -> „Nur Zeilenmasken“
+- dafür im Reiter „Bilder“ einfach alle Bilder des Dokuments markieren →  „Segmentieren“ → „Nur Zeilenmasken“
 - Aktivierung der Option „override“
 
-Bild
+![eScriptorium1](https://user-images.githubusercontent.com/91966243/179989855-242614ea-4d19-4b00-8646-79ede9fd6773.png)
 
 - Wenn eScriptorium bei Verarbeitung auf Fehler stößt, müssen diese händisch korrigiert werden
 - Nach diesen Schritten kann ein Kraken-Modell in eScriptorium trainiert werden und die Leistung mit Transkribus verglichen werden
